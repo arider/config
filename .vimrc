@@ -23,6 +23,24 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'luochen1990/rainbow'
 Plugin 'fatih/vim-go'
 
+
+" Track the engine.
+" Plugin 'SirVer/ultisnips'
+"
+" " Snippets are separated from the engine. Add this if you want them:
+" Plugin 'honza/vim-snippets'
+"
+" " Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"
+" " If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"
+
+
+
 "Plugin 'davidhalter/jedi.git'
 "Plugin 'davidhalter/jedi-vim'
 
@@ -43,6 +61,7 @@ filetype plugin indent on    " required
 
 
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+au FileType go setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 map qq 0i#df
 
 set number
